@@ -1,0 +1,46 @@
+# Recursion basics.
+
+# Recursive function that prints after countdown.
+
+def countdown (n):
+    if n <= 0:
+            print ("Happy New Year!")
+    else:
+            print (n)
+            countdown (n-1)
+
+countdown (10)
+""" #output
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Happy New Year!
+"""
+
+# Recursive function that prints n times a String.
+
+def print_n (s, n):
+    if n <= 0:
+            return
+    print(s)
+    print_n(s, n-1)
+  
+print_n ("Universe and Time...", 100)
+
+""" # prints "Universe and Time..." x 100
+Universe and Time...
+Universe and Time...
+Universe and Time...
+.
+.
+.
+Universe and Time...
+"""
+
